@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>XSS PoC</title>
+    <title>Open Redirect PoC</title>
     <meta name="robots" content="noindex">
 </head>
 <body>
-    <a href="https://bigflip-staging-b.flip.id/?test=%3Cscript%3Ealert('XSS')%3C/script%3E">Click to Test XSS</a>
+    <h1>Open Redirect PoC</h1>
+    <p>Click the link to test if the site redirects to example.com:</p>
+    <a href="https://bigflip-staging-b.flip.id/redirect?url=https://example.com">Test Redirect</a>
 </body>
 </html>
